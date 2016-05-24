@@ -729,7 +729,7 @@ public class DragLinearLayout extends LinearLayout {
             if (MotionEvent.ACTION_DOWN == MotionEventCompat.getActionMasked(event)) {
                 startDetectingDrag(view);
             }
-            return false;
+            return true; // alexisvapillon PATCH!
         }
     }
 
